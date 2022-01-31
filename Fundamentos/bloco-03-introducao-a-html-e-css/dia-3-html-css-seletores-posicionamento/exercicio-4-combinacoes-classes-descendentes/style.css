@@ -1,0 +1,49 @@
+ol li:nth-child(even){
+    background-color:violet;
+    color: green;
+}
+
+ol li:nth-child(odd){
+    text-transform:uppercase;
+    color: red;
+}
+
+ol{
+    background-color: yellow;
+}
+
+.fonte-h1h2{
+    color: red;
+}
+
+.tamanho-h1{
+   font-size: 50px;
+   border: 5px solid black;
+}
+
+.fonte i:nth-child(2){
+    font-size: 20px;
+    background-color: red;
+}
+
+.italico{
+    font-weight:bold;
+}
+
+
+ul.cor-fonte li:nth-child(-n+3){
+    color: blue;
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+#java{
+    background-color: 
+    pink;
+}
+
+.estilolista:hover{
+    background-color: plum;
+    font-style:italic;
+
+}
