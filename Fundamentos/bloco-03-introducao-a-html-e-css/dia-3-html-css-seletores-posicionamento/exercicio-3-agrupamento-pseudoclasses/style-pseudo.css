@@ -1,0 +1,32 @@
+
+div:hover{
+  border-style: outset;
+  border-color: black;
+}
+
+
+#primaria{
+  background-color: burlywood;
+}
+
+#secundaria{
+  background-color: slateblue;
+}
+
+#complementar{
+  background-color: yellow;
+  height: 200px;
+}
+
+#cor-escura{
+  background-color: darkcyan;
+}
+
+#cor-clara{
+  background-color: darksalmon;
+}
+
+div h3:nth-child(odd){
+  background-color: darkseagreen;
+  font-style: italic;
+}
