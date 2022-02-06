@@ -1,4 +1,4 @@
-# Trybe :hourglass_flowing_sand:
+# Trybe :hourglass_flowing_sand: :rocket:
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Daniele Bueno](https://www.linkedin.com/in/daniele-bueno-dev/) enquanto estudante na [Trybe](https://www.betrybe.com/) :rocket:
 
