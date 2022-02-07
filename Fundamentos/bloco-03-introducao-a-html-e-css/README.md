@@ -1,10 +1,10 @@
-# BLOCO 3 - HTML E CSS :white_check_mark: 
+# BLOCO 3 - HTML E CSS :white_check_mark: :rocket:
 
 
 Esse bloco pertence ao módulo de `fundamentos` do curso da [Trybe](https://www.betrybe.com/). 
 
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Bloco 3: Introdução - HTML & CSS 
 
 - [X] 3-1: _HTML & CSS - Estruturas de pãgina_
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
