@@ -15,6 +15,3 @@ for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
 }
 
 console.log(biggestPrimeNumber);
-
-
-
