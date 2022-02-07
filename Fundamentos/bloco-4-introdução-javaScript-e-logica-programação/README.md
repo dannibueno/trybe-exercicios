@@ -1,4 +1,4 @@
-# BLOCO 4 - INTRODUÇÃO - JAVASCRIPT :hourglass_flowing_sand: 
+# BLOCO 4 - INTRODUÇÃO - JAVASCRIPT :hourglass_flowing_sand: :rocket:
 
 
 Esse bloco pertence ao módulo de `fundamentos` do curso da [Trybe](https://www.betrybe.com/). 
