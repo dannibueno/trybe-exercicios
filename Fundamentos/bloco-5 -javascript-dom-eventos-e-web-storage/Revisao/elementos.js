@@ -12,7 +12,7 @@ pai.style.color = 'red';
 
 /* Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso? */
 
-let primeiroFilhodoFilho = elementoOndeVcEsta.firstElementChild;
+let primeiroFilhodoFilho = elementoOndeVoceEsta.firstElementChild;
 primeiroFilhodoFilho.innerText = "Estamos testando";
 
 
