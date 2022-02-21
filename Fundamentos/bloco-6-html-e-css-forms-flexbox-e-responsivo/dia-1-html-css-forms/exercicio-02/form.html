@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybe Trip</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Concorra à Viagem dos seus sonhos com a TrybeTrip</h1>
+    </header>
+
+
+    <main>
+        <form action="" method="get" class="speaker-form">
+
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="full-name">Nome Completo</label>
+                    <input required type="text" name="full-name" id="full-name" placeholder="Digite seu nome completo"
+                        minlength="10" maxlength="40">
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="line-content">
+                    <label for="email">E-mail</label>
+                    <input required type="text" name="email" id="email" placeholder="Digite seu email"
+                        autocomplete="off" minlength="10" maxlength="50">
+                </div>
+            </div>
+
+
+
+            <div class="line-content">
+                <fieldset class="legacy-form-row">
+                    <legend>Tipo de lugar</legend>
+                    <label for="cidade">
+                        <input type="radio" id="cidade" name="cidade" value="cidade"> Cidade
+                    </label>
+
+                    <label for="campo">
+                        <input type="radio" id="campo" name="campo" value="campo"> Campo
+                    </label>
+
+                    <label for="praia">
+                        <input type="radio" id="praia" name="praia" value="praia"> Praia
+                    </label>
+
+                    <label for="montanhas">
+                        <input type="radio" id="montanhas" name="montanhas" value="op1"> Montanhas
+                    </label>
+                </fieldset>
+            </div>
+
+
+            <div class="line-content">
+                <fieldset class="legacy-form-row">
+                    <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+                    <textarea placeholder="Digite sua resposta" name="resposta" id="resposta" cols="30" rows="10"
+                        maxlength="500"></textarea>
+                </fieldset>
+            </div>
+
+
+            <div class="line-content">
+                <label for="data">Qual a melhor data para realizar sua viagem?</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div class="line-content">
+                <label for="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela
+                    Trybe?</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </div>
+
+            <div class="line-content">
+                <label for="concordar" >Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+                    concursos futuros.</label>
+                <input type="checkbox" name="concordar" id="concordar" required>
+            </div>
+
+            <div class="line-content">
+                <button type="submit" id="enviar" disabled>Enviar</button>
+                <button type="submit" id="apagar">Apagar</button>
+            </div>
+
+        </form>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
