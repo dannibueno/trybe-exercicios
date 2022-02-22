@@ -1,0 +1,14 @@
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  margin-bottom: 20px;
+}
+
+body{
+  background-color: aliceblue;
+}
