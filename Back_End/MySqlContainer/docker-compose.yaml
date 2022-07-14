@@ -1,0 +1,17 @@
+version: '3'
+ 
+services:
+  trybe_mysql:
+    image: mysql:5.7
+    container_name: trybe_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: trybe_mysql
+      MYSQL_USER: dani
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+volumes:
+  dbdata:
