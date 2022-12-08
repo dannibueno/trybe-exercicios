@@ -1,0 +1,117 @@
+db.filmes.findOne();
+
+// filtra ano menor que 1990
+db.filmes.find({ano: {$lt: 1990}});
+
+// conta quantos filmes tem com ano menor que 1990
+db.filmes.count({ano: {$lt: 1990}});
+
+// filtra quantos filmes menor ou igual a 2002
+db.filmes.count({ano: {$lte: 2002}});
+
+// filtra ano maior que 2015
+db.filmes.count({ano: {$gt: 2015}});
+
+// filtra quantidade filme no ano maior que ou igual que 2015
+db.filmes.count({ano: {$gte: 2015}});
+
+// filtra quantidade igual no ano de 2015
+db.filmes.count({ano: {$eq: 2015}});
+
+// filtra o filme igual ano de 2015
+db.filmes.find({ano: {$eq: 2015}});
+
+// filtra o filme NÃO igual ano de 2015
+db.filmes.find({ano: {$ne: 2015}});
+
+// filtra filmes que foram lançados antes do ano 2000
+// lt - less than
+db.filmes.find({ano: {$lt: 2000}});
+
+// filtra filmes menor ou igual a 2000
+db.filmes.find({ano: {$lte: 2000}});
+
+// filtra filmes lançados nos anos posteriores a 1993
+// $gt = greater than
+db.filmes.find({ano: {$gt: 1993}});
+
+// filtra filmes lançados a partir 1993
+// $gte = greater than or equal
+db.filmes.find({ano: {$gte: 1993}});
+
+// filtra filmes lançados em 1993
+db.filmes.find({ ano: 1993 });
+
+db.filmes.find({ano: {$eq: 1993}});
+
+
+// filtra filmes que tem 7 na avaliações bom
+db.filmes.find({ "avaliacao.bom": 7 });
+
+db.filmes.find({ "avaliacao.bom": {$eq: 8}});
+
+// filtra filmes que não tem 7 na avaliações ruim
+
+db.filmes.find({ "avaliacao.ruim": {$ne: 7}});
+
+// filtra filmes lançados nos anos posteriores ao 2000 e receberam a partir de 8 avaliaçoes boas. 
+
+db.filmes.find(
+{ ano: {$gt: 2000 }, "avaliacao.bom": { $gte: 8} 
+}) 
+
+// filtra filmes lançados nos anos posteriores ao 2000 ou receberam a partir de 8 avaliaçoes boas. 
+
+db.filmes.find({
+  $or: [
+    {ano: { $gt: 2000} },
+    {"avaliacao.bom": {$gte: 8}},
+  ]
+}) 
+
+
+// filmes que não foram dirigidos por Michael Bay
+
+db.filmes.find(
+{ "diretor": {$ne: "Michael Bay" }})
+
+
+// filmes que não foram dirigidos por Michael Bay e não receberam 10 avaliaçoes ruim
+
+db.filmes.find({
+  $nor: [
+    {"diretor": "Michael Bay" },
+    {"avaliacao.ruim": 10}
+  ]
+})
+
+// todos os registros que contenham o primeiro campo
+
+db.records.find(
+{ primeiro: {$exists: true }}).count();
+
+
+// ordena em ordem crescente
+
+db.filmes.find().sort({ titulo: 1})
+
+// ordena em ordem descrescente
+
+db.filmes.find().sort({ titulo: -1})
+
+// deleta filme 
+
+db.filmes.deleteOne({ titulo: "Os Oito Odiados"})
+
+// deleta filme avaliaçao ruim maior que 6
+
+db.filmes.deleteMany({ "avaliacao.ruim": {$gt: 6} })
+
+// conta quantos filmes do ano de 2015 e 2016
+db.filmes.count({ano: {$in: [2015, 2016]}});
+
+db.filmes.find({ano: {$in: [2010, 2016]}});
+
+
+// conta quantos filmes não estáo no ano de 2015 e 2016
+db.filmes.count({ano: {$nin: [2015, 2016]}});

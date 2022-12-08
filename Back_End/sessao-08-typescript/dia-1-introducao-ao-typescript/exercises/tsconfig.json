@@ -1,0 +1,21 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "compilerOptions": {
+      "target": "es2016",                                 
+      "module": "commonjs",
+      "rootDir": "./",
+      "outDir": "./dist",
+      "preserveConstEnums": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+    }
+  }
+
+
+
+  // BLOCO 26 - DIA 1
+  // Tipos e Subtipos 
+
+  // Primeiro Programa em TypeScript
